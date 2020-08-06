@@ -1,0 +1,57 @@
+/* * {
+  background-color: royalblue;
+} */
+
+
+.App {
+  min-height: 1000vh;
+  text-align: center;
+  background-color: rgba(119, 136, 153, .4);
+  /* background-color: wheat; */
+  background-color:white;
+  background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+  linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+  background-size:50px 50px;
+
+  /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  ; */
+  /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+}
+
+
+.Header {
+  /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+  /* background-color: rgba(119, 136, 153, .4); */
+  /* min-height: 25vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Title {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 2%;
+  /* font: 50px; */
+  color: azure;
+  text-decoration: none;
+  font-size: 50px;
+  -webkit-text-stroke: 1px rgba(61, 58, 58, 0.719);
+
+}
+
+.add {
+  background-color: rgb(255, 208, 0);
+  /* display: flex;
+  justify-content: center;
+  align-self: right; */
+  padding: 10px;
+  color: azure;
+  text-decoration: none;
+  border-radius: 10px;
+} 
+
+
+

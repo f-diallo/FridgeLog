@@ -1,0 +1,146 @@
+
+.Body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+
+
+/* fridgeItems.js */
+
+.list-group{
+    
+    /* background-color: rgba(119, 136, 153, .4); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	/* align-self: center; */
+    padding: 10px;
+	width: 500px;
+	/* border-radius: 10px; */
+}
+
+.list-group-item{
+    /* background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px; */
+    background-color: rgba(250, 248, 240, 0.979);
+    margin: 2px;
+    display: flex;
+    /* justify-content: center; */
+    align-self: center;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+/* select.js */
+/* food ///////////////////////////////////////*/
+.food-body {
+    text-align: center;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  */
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  }
+.food-title{
+    padding: 10px;
+
+}
+.food-text{
+    padding: 10px;
+
+}
+/* ///////////////////////////////////// */
+/* update/////////////////////////////// */
+.update{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+/* ///////////////////////////////////// */
+/* delete/////////////////////////////// */
+.delete{/*do what i did w/ update btns for delete btns*/
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+/* ///////////////////////////////////// */
+/* form///////////////////////////////// */
+.form-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+.form-group{
+    /* min-height:10vh;
+    font-size: 20px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+label {
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+.form-input{
+    /* border: 1px solid lightslategrey; */
+    border: none;
+    padding: 5px;
+    /* font-size: 20px; */
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: lightskyblue;
+    margin: 2px;
+    display: flex;
+    /* align-self: center;
+    justify-content: center; */
+    /* width: 50%; */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-self: center; */
+    /* width: 50%; */
+
+}
+/* ///////////////////////////////////// */
