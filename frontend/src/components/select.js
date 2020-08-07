@@ -101,7 +101,7 @@ export default class SelectItem extends Component {
             })
         });
 
-        this.props.history.push('/');
+        this.props.history.push('/select/' + this.props.match.params.id);
     }
 
     askDelete = () => {
@@ -193,8 +193,9 @@ export default class SelectItem extends Component {
                         </div>
                         <div className='btns'>
                             <Link className="btn" to={'/select/'+ this.props.match.params.id} 
-                              onClick={()=>this.showFood(this.props.match.params.id)}>
-                                Cancel</Link>
+                                onClick={()=>this.showFood(this.props.match.params.id)}>
+                                Cancel
+                            </Link>
                             <input type="submit" value='Save' className='btn'/>
                         </div>
                     </form>

@@ -1,31 +1,96 @@
 /* * {
-  background-color: royalblue;
+  background-color: royalblue; 
 } */
 
 
 .App {
-  min-height: 1000vh;
-  text-align: center;
-  background-color: rgba(119, 136, 153, .4);
+   /* min-height: 300vh; */
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: column;
+   /*background-color: rgba(119, 136, 153, .4); */
   /* background-color: wheat; */
-  background-color:white;
+  /* background-color:white;
   background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
   linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
-  background-size:50px 50px;
+  background-size:50px 50px; */
 
   /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  ; */
   /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+
+}
+frame{
+  background: url(https://www.kindpng.com/picc/m/124-1241707_icicle-clip-art-icicles-transparent-background-hd-png.png);
+  background-size: cover;
+  background-position: top;
+}
+/* Droplet animation from https://codepen.io/Javarome/pen/ogEoJM */
+:root {
+  --duration: 7s;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@keyframes eye-focus {
+  0% {
+    -webkit-filter: blur(0);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+  }
+}
+@keyframes focus-shift {
+  0% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1.01)
+  }
+}
+.landscape {
+  z-index: 0;
+  background: url(https://i.pinimg.com/originals/fd/4b/c0/fd4bc0c1012cf37cc62ad9785631210c.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(1em);
+  animation: eye-focus var(--duration) ease-in infinite alternate, 
+    focus-shift var(--duration) ease-in infinite alternate;
+}
+.glass {
+  z-index: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/glass_droplets.jpeg);
+  /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTU3NxS_X26J3LiFGoeLu_l_N_785W_msAmZA&usqp=CAU); */
+  background-size: cover;
+  background-position: center;
+  filter: blur(0);
+  animation: eye-focus var(--duration) ease-in infinite var(--duration) alternate, 
+    focus-shift var(--duration) ease-in infinite alternate;
+  opacity: 0.5;
 }
 
-
 .Header {
+  z-index: 1;
   /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
   /* background-color: rgba(119, 136, 153, .4); */
-  /* min-height: 25vh; */
+  min-height: 30vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  /* padding: 2%; */
+
 }
 
 .Title {
@@ -34,7 +99,7 @@
   justify-content: center;
   align-self: center;
   padding: 2%;
-  /* font: 50px; */
+  /* font: 50px;*/ 
   color: azure;
   text-decoration: none;
   font-size: 50px;
@@ -44,9 +109,9 @@
 
 .add {
   background-color: rgb(255, 208, 0);
-  /* display: flex;
+  /* display: flex;*/
   justify-content: center;
-  align-self: right; */
+  align-self: right; 
   padding: 10px;
   color: azure;
   text-decoration: none;
@@ -54,4 +119,10 @@
 } 
 
 
-
+.FoodBody{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin-block-start: 39vh;
+  /* min-height: 300vh; */
+}

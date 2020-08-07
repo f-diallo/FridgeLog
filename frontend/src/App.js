@@ -57,12 +57,15 @@ export default class App extends Component {
   render(){
     return (
         <div className="App">
+			<div className="landscape background"></div>
+			<div className="glass backgrounds"></div>
+			<div className="frame"></div>
 			<Switch>
 				<div className='Header'>
 					<Link className='Title' to='/'>Fridge Log</Link>
 					<Link className='add' to='/create'>+ Add Item</Link>
 				</div>
-				<div className='Body'>
+				<div className='FoodBody'>
 					<h3>Fridge</h3>
 					<div className= "list-group">
 						{this.state.items.map(item => (

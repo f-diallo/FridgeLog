@@ -74,49 +74,53 @@ export default class AddItem extends Component {
 
     render() {
         return (
-            <div className='Create'>
+            <div className='create update'>
                 <h3>Add New Item</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <div className='form-group'>
-                        <label>Title: </label>
-                        <input type="text"
-                            className='form-input'
-                            placeholder='Enter item name'
-                            value={this.state.title}
-                            onChange={this.onChangeTitle}
-                            autoFocus/>
+                    <div className='form-body'>
+                        <div className='form-group'>
+                            <label>Title: </label>
+                            <input type="text"
+                                className='form-input'
+                                placeholder='Enter item name'
+                                value={this.state.title}
+                                onChange={this.onChangeTitle}
+                                autoFocus/>
+                        </div>
+                        <div className='form-group'>
+                            <label>Description: </label>
+                            <input type="text"
+                                className='form-input'
+                                placeholder='Enter item description (optional)'
+                                value={this.state.description}
+                                onChange={this.onChangeDescription}
+                                />
+                        </div>
+                        <div className='form-group'>
+                            <label>Quantity: </label>
+                            <input type="text"
+                                className='form-input'
+                                placeholder='Enter item quantity'
+                                value={this.state.quantity}
+                                onChange={this.onChangeQuantity}
+                                />
+                        </div>
+                        <div className='form-group'>
+                            <label>Expiration Date: </label>
+                            <input type="date"
+                                className='form-input'
+                                placeholder='Enter item expiration date'
+                                value={this.state.expDate}
+                                onChange={this.onChangeExpDate}
+                                />
+                        </div>
                     </div>
-                    <div className='form-group'>
-                        <label>Description: </label>
-                        <input type="text"
-                            className='form-input'
-                            placeholder='Enter item description (optional)'
-                            value={this.state.description}
-                            onChange={this.onChangeDescription}
-                            />
+                    <div className='btns'>
+                        <Link to='/' className="btn" type='button'>
+                            Cancel
+                        </Link>
+                        <input type="submit" value='Save' className='btn'/>
                     </div>
-                    <div className='form-group'>
-                        <label>Quantity: </label>
-                        <input type="text"
-                            className='form-input'
-                            placeholder='Enter item quantity'
-                            value={this.state.quantity}
-                            onChange={this.onChangeQuantity}
-                            />
-                    </div>
-                    <div className='form-group'>
-                        <label>Expiration Date: </label>
-                        <input type="date"
-                            className='form-input'
-                            placeholder='Enter item expiration date'
-                            value={this.state.expDate}
-                            onChange={this.onChangeExpDate}
-                            />
-                    </div>
-                    <Link to='/' className="btn" type='button'>
-                        Cancel
-                    </Link>
-                    <input type="submit" value='Save' className='btn'/>
                 </form>
             </div>
         );
