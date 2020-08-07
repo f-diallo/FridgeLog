@@ -4,7 +4,7 @@
 
 
 .App {
-   /* min-height: 300vh; */
+   /* min-height: 500px; */
    display: flex;
    align-content: center;
    justify-content: center;
@@ -20,25 +20,22 @@
   /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
 
 }
-frame{
-  background: url(https://www.kindpng.com/picc/m/124-1241707_icicle-clip-art-icicles-transparent-background-hd-png.png);
-  background-size: cover;
-  background-position: top;
-}
+
+
 /* Droplet animation from https://codepen.io/Javarome/pen/ogEoJM */
 :root {
-  --duration: 7s;
+  --duration: 5s;
 }
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
 }
 img {
   width: 100%;
   height: 100%;
 }
-div {
+span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -81,15 +78,20 @@ div {
 }
 
 .Header {
-  z-index: 1;
+  z-index: 2;
   /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
   /* background-color: rgba(119, 136, 153, .4); */
-  min-height: 30vh; 
+  /* min-height: 10%; 
+  max-height: 15%; */
+  	width: 500px;
+
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  /* padding: 2%; */
+
+  padding: 20px;
 
 }
 
@@ -98,7 +100,7 @@ div {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: 2%;
+  padding: 20px;
   /* font: 50px;*/ 
   color: azure;
   text-decoration: none;
@@ -120,9 +122,9 @@ div {
 
 
 .FoodBody{
-  z-index: 1;
+  z-index: 2;
   display: flex;
-  justify-content: center;
-  margin-block-start: 39vh;
+  flex-direction: column;
+  align-items: center;
   /* min-height: 300vh; */
 }

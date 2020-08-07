@@ -74,7 +74,7 @@ export default class AddItem extends Component {
 
     render() {
         return (
-            <div className='create update'>
+            <div className='create'>
                 <h3>Add New Item</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className='form-body'>

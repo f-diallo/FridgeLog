@@ -8,11 +8,17 @@
 }
 
 .Select {
-    
+    z-index: 2;
+    background-color: rgba(250, 248, 240, 0.979);
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: space-evenly;
     flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 1000px;
+    max-width: 1200px;
 }
 
 
@@ -53,15 +59,11 @@
 /* food ///////////////////////////////////////*/
 .food-body {
     text-align: center;
-    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
-    border-radius: 5px;
     width: 1000px;
-
     /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  */
     /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
   }
@@ -75,21 +77,34 @@
 }
 /* ///////////////////////////////////// */
 /* update/////////////////////////////// */
-.update{/*also has .create*/
-    background-color: antiquewhite;
+.create{
+    z-index: 2;
+    background-color: rgba(250, 248, 240, 0.979);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     align-self: center;
+    width: 1200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* ///////////////////////////////////// *//* update/////////////////////////////// */
+.update{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
 }
 /* ///////////////////////////////////// */
 /* delete/////////////////////////////// */
 .delete{/*do what i did w/ update btns for delete btns*/
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
 }
 /* ///////////////////////////////////// */
 /* form///////////////////////////////// */
@@ -98,6 +113,8 @@
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    align-items: center;
+    /* width:1000px; */
 }
 .form-group{
     /* min-height:10vh;
@@ -107,23 +124,24 @@
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    align-items: center;
 }
 
 label {
-    /* padding: 5px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    padding: 5px;
 }
 .form-input{
     /* border: 1px solid lightslategrey; */
     border: none;
     padding: 5px;
-    /* font-size: 20px; */
     display: flex;
     align-content: center;
     border-radius: 10px;
+    width: 175px;
 }
 
 .btn {

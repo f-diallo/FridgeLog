@@ -57,14 +57,16 @@ export default class App extends Component {
   render(){
     return (
         <div className="App">
-			<div className="landscape background"></div>
-			<div className="glass backgrounds"></div>
-			<div className="frame"></div>
+			<span className="landscape background"></span>
+			<span className="glass backgrounds"></span>
+			{/* <div className="frame"></div> */}
 			<Switch>
 				<div className='Header'>
 					<Link className='Title' to='/'>Fridge Log</Link>
 					<Link className='add' to='/create'>+ Add Item</Link>
 				</div>
+        <Route path='/create' component={AddItem} />
+				<Route path='/select/:id' component={SelectItem} />
 				<div className='FoodBody'>
 					<h3>Fridge</h3>
 					<div className= "list-group">
@@ -79,8 +81,7 @@ export default class App extends Component {
 					</div>
 				</div>
 
-				<Route path='/create' component={AddItem} />
-				<Route path='/select/:id' component={SelectItem} />
+
 			</Switch>
         </div>
     );
