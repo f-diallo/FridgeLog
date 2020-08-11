@@ -7,4 +7,13 @@
 
 ---
 **The Fridge Log is a useful tool for keeping track of food in your fridge, using data like quantity and expiration date.**
-![](home.gif)
+
+![Gif of Homepage](/gifs/home.gif)
+
+**Read and Add Item**
+
+![Gif of Read and Add Item](/gifs/read_create.gif)
+
+**Update and Delete Item**
+
+![Gif of Update and Delete Item](/gifs/update_delete.gif)
