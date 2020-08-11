@@ -68,7 +68,8 @@ export default class App extends Component {
         <Route path='/create' component={AddItem} />
 				<Route path='/select/:id' component={SelectItem} />
 				<div className='FoodBody'>
-					<h3>Fridge</h3>
+					{/* <h3>Fridge</h3> */}
+          <br/>
 					<div className= "list-group">
 						{this.state.items.map(item => (
 							<Link to={'/select/'+item._id}

@@ -9,15 +9,6 @@
    align-content: center;
    justify-content: center;
    flex-direction: column;
-   /*background-color: rgba(119, 136, 153, .4); */
-  /* background-color: wheat; */
-  /* background-color:white;
-  background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
-  linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
-  background-size:50px 50px; */
-
-  /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  ; */
-  /* background-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
 
 }
 
@@ -38,7 +29,7 @@ img {
 span {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 150%;
 }
 @keyframes eye-focus {
   0% {
@@ -58,7 +49,6 @@ span {
 }
 .landscape {
   z-index: 0;
-  /* background: url(https://images.wallpaperscraft.com/image/frost_pattern_glass_131393_1920x1080.jpg); */
   background: url(https://i.pinimg.com/originals/fd/4b/c0/fd4bc0c1012cf37cc62ad9785631210c.png);
   background-repeat: repeat;
   background-size: cover;
@@ -70,7 +60,6 @@ span {
 .glass {
   z-index: 0;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/glass_droplets.jpeg);
-  /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTU3NxS_X26J3LiFGoeLu_l_N_785W_msAmZA&usqp=CAU); */
   background-size: cover;
   background-position: center;
   filter: blur(0);
@@ -81,18 +70,12 @@ span {
 
 .Header {
   z-index: 2;
-  /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
-  /* background-color: rgba(119, 136, 153, .4); */
-  /* min-height: 10%; 
-  max-height: 15%; */
-  	width: 500px;
-
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-
   padding: 20px;
 
 }
@@ -103,10 +86,10 @@ span {
   justify-content: center;
   align-self: center;
   padding: 20px;
-  /* font: 50px;*/ 
   color: azure;
   text-decoration: none;
   font-size: 60px;
+  /* font-weight: 550; */
   -webkit-text-stroke: 1px rgba(61, 58, 58, 0.719);
 
 }
@@ -129,5 +112,4 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-height: 300vh; */
 }

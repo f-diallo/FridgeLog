@@ -25,7 +25,6 @@
 /* fridgeItems.js */
 
 .list-group{
-    
     /* background-color: rgba(119, 136, 153, .4); */
     display: flex;
     flex-direction: column;
@@ -37,14 +36,10 @@
 }
 
 .list-group-item{
-    /* background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
-    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
-    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
-    background-size: 25px 25px; */
+    color: navy;
     background-color: rgba(250, 248, 240, 0.979);
     margin: 2px;
     display: flex;
-    /* justify-content: center; */
     align-self: center;
     width: 50%;
     border: none;
@@ -65,9 +60,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 1000px;
-    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  */
-    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
-  }
+}
 .food-title{
     padding: 10px;
 
@@ -115,11 +108,8 @@
     justify-content: center;
     align-self: center;
     align-items: center;
-    /* width:1000px; */
 }
 .form-group{
-    /* min-height:10vh;
-    font-size: 20px; */
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -136,7 +126,6 @@ label {
     padding: 5px;
 }
 .form-input{
-    /* border: 1px solid lightslategrey; */
     border: none;
     padding: 5px;
     display: flex;
