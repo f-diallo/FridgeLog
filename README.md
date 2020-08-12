@@ -6,16 +6,20 @@
 - This Fridge Log handles four functions: Create, Read, Update, and Delete (CRUD).
 
 
+
 **Guide to FridgeLog**
 ---
 **The Fridge Log is a useful tool for keeping track of food in your fridge, using data like quantity and expiration date.**
 
-![Gif of Homepage](/gifs/home.gif "Gif of Homepage" =250x)
+<img src="/gifs/home.gif" width="850" alt="Gif of Homepage">
+<!-- Alternate way:![Gif of Homepage](/gifs/home.gif "Gif of Homepage") -->
+
 
 ### **Read and Add Item**
 
-![Gif of Read and Add Item](/gifs/read_create.gif "Gif of Read and Add Item")
+<img src="/gifs/read_create.gif" width="850" alt="Gif of Read and Add Item">
+
 
 ### **Update and Delete Item**
 
-![Gif of Update and Delete Item](/gifs/update_delete.gif "Gif of Update and Delete Item")
+<img src="/gifs/update_delete.gif" width="850" alt="Gif of Update and Delete Item">
